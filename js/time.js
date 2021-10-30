@@ -1,14 +1,14 @@
-const date = document.querySelector("date");
-const clock = document.querySelector("clock");
+const calender = document.querySelector(".calender");
+const clock = document.querySelector(".clock");
 
-function getDate() {
+function getCalender() {
   const today = new Date();
   const year = today.getFullYear();
   const month = String(today.getMonth() + 1).padStart(2, "0");
   const date = String(today.getDate()).padStart(2, "0");
   const dayNum = today.getDay();
 
-  console.log(`${year}년 ${month}월 ${date}일(${getTodayDay(dayNum)})`);
+  calender.innerText = `${year}년 ${month}월 ${date}일(${getTodayDay(dayNum)})`;
 }
 
 function getTodayDay(num) {
@@ -35,11 +35,11 @@ function getClock() {
   const minute = String(today.getMinutes()).padStart(2, "0");
   const second = String(today.getSeconds()).padStart(2, "0");
 
-  console.log(`${hour}:${minute}:${second}`);
+  clock.innerText = `${hour}:${minute}:${second}`;
 }
 
 function getTime() {
-  getDate();
+  getCalender();
   getClock();
 }
 
