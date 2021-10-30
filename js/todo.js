@@ -15,6 +15,7 @@ function handleTodoSubmit(event) {
   todoInput.value = "";
   todos.push(newTodoObj);
   showTodo(newTodoObj);
+  saveTodo();
 }
 
 function showTodo(newTodo) {
@@ -28,6 +29,10 @@ function showTodo(newTodo) {
   li.appendChild(span);
   li.appendChild(button);
   todoList.appendChild(li);
+}
+
+function saveTodo() {
+  localStorage.setItem("todo", JSON.stringify(todos));
 }
 
 function deleteTodo() {}
