@@ -1,19 +1,33 @@
-const totoForm = document.querySelector(".todo-form");
+const todoForm = document.querySelector(".todo-form");
 const todoInput = document.querySelector(".todo-form input");
 const todoList = document.querySelector(".todo-list");
 
-const TODO_KEY = "todo";
-
 let todos = [];
 
-toDoForm.addEventListener("submit", handleTodoSubmit);
+todoForm.addEventListener("submit", handleTodoSubmit);
 
 function handleTodoSubmit(event) {
   event.preventDefault();
-  todoInput.value = "";
   const newTodoObj = {
     id: Date.now(),
     text: todoInput.value,
   };
+  todoInput.value = "";
   todos.push(newTodoObj);
+  showTodo(newTodoObj);
 }
+
+function showTodo(newTodo) {
+  const li = document.createElement("li");
+  li.id = newTodo.id;
+  const span = document.createElement("span");
+  span.innerText = newTodo.text;
+  const button = document.createElement("button");
+  button.innerText = "❌";
+  button.addEventListener("click", deleteTodo);
+  li.appendChild(span);
+  li.appendChild(button);
+  todoList.appendChild(li);
+}
+
+function deleteTodo() {}
