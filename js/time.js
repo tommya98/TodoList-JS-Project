@@ -3,14 +3,12 @@ const clock = document.querySelector("clock");
 
 function getDate() {
   const today = new Date();
-  const todayYear = today.getFullYear();
-  const todayMonth = String(today.getMonth() + 1).padStart(2, "0");
-  const todayDate = String(today.getDate()).padStart(2, "0");
-  const todayDayNum = today.getDay();
+  const year = today.getFullYear();
+  const month = String(today.getMonth() + 1).padStart(2, "0");
+  const date = String(today.getDate()).padStart(2, "0");
+  const dayNum = today.getDay();
 
-  console.log(
-    `${todayYear}년 ${todayMonth}월 ${todayDate}일(${getTodayDay(todayDayNum)})`
-  );
+  console.log(`${year}년 ${month}월 ${date}일(${getTodayDay(dayNum)})`);
 }
 
 function getTodayDay(num) {
