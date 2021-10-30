@@ -45,4 +45,9 @@ function saveTodo() {
   localStorage.setItem(TODO_KEY, JSON.stringify(todos));
 }
 
-function deleteTodo() {}
+function deleteTodo(event) {
+  const li = event.target.parentElement;
+  li.remove();
+  todos = todos.filter((todo) => todo.id !== parseInt(li.id));
+  saveTodo(todos);
+}
