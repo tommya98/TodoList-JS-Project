@@ -31,4 +31,14 @@ function getTodayDay(num) {
   }
 }
 
+function getClock() {
+  const today = new Date();
+  const hour = String(today.getHours()).padStart(2, "0");
+  const minute = String(today.getMinutes()).padStart(2, "0");
+  const second = String(today.getSeconds()).padStart(2, "0");
+
+  console.log(`${hour}:${minute}:${second}`);
+}
+
 getDate();
+getClock();
