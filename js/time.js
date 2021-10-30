@@ -38,5 +38,10 @@ function getClock() {
   console.log(`${hour}:${minute}:${second}`);
 }
 
-getDate();
-getClock();
+function getTime() {
+  getDate();
+  getClock();
+}
+
+getTime();
+setInterval(getTime, 1000);
