@@ -20,3 +20,7 @@ function onLoginSubmit(event) {
   localStorage.setItem(USERNAME_KEY, username);
   console.log(`안녕하세요 ${username}님`);
 }
+
+function sayHello(username) {
+  console.log(`${username}님 안녕하세요`);
+}
