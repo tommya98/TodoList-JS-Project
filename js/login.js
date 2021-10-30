@@ -8,6 +8,7 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername) {
   loginForm.classList.add(HIDDEN_CLASSNAME);
+  console.log(`안녕하세요 ${localStorage.getItem(USERNAME_KEY)}님`);
 } else {
   loginForm.addEventListener("submit", onLoginSubmit);
 }
@@ -17,4 +18,5 @@ function onLoginSubmit(event) {
   loginForm.classList.add(HIDDEN_CLASSNAME);
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username);
+  console.log(`안녕하세요 ${username}님`);
 }
