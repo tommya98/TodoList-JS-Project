@@ -7,14 +7,16 @@
 
 body {
   font-family: "Gamja Flower", cursive;
-  font-size: 48px;
+  font-size: 2em;
   font-weight: 1000;
   color: white;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
 }
 
 input {
   font-family: "Gamja Flower", cursive;
-  font-size: 48px;
+  font-size: 1em;
   font-weight: 700;
 }
 
@@ -44,4 +46,26 @@ li {
   align-items: center;
   width: 100vw;
   height: 100vh;
+}
+
+.hello {
+  position: absolute;
+  top: 7vh;
+  left: 5vw;
+}
+
+/* time */
+.clock {
+  position: absolute;
+  top: 4vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3em;
+}
+
+.calender {
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
 }

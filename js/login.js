@@ -27,5 +27,5 @@ function onLoginSubmit(event) {
 
 function sayHello(username) {
   hello.classList.remove(HIDDEN_CLASSNAME);
-  hello.innerText = `${username}님 안녕하세요`;
+  hello.innerText = `반장: ${username}`;
 }
