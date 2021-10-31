@@ -1,3 +1,37 @@
+/* reset CSS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Gamja Flower", cursive;
+  font-size: 48px;
+  font-weight: 1000;
+}
+
+input {
+  font-family: "Gamja Flower", cursive;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  box-shadow: none;
+}
+
+ol,
+li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
 .hidden {
   display: none;
 }
