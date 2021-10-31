@@ -34,7 +34,10 @@ function showTodo(newTodo) {
   const span = document.createElement("span");
   span.innerText = newTodo.text;
   const button = document.createElement("button");
-  button.innerText = "❌";
+  const icon = document.createElement("i");
+  icon.classList.add("fas");
+  icon.classList.add("fa-eraser");
+  button.appendChild(icon);
   button.addEventListener("click", deleteTodo);
   li.appendChild(span);
   li.appendChild(button);
@@ -46,7 +49,7 @@ function saveTodo() {
 }
 
 function deleteTodo(event) {
-  const li = event.target.parentElement;
+  const li = event.target.parentElement.parentElement;
   li.remove();
   todos = todos.filter((todo) => todo.id !== parseInt(li.id));
   saveTodo(todos);

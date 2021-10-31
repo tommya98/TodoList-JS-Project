@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -73,13 +74,48 @@ li {
 /* quote */
 .quote {
   position: absolute;
-  left: 5vw;
   top: 25vh;
+  left: 5vw;
 }
 
 .today-quote,
 .quote-text {
   margin-bottom: 2vh;
+}
+
+/* todo */
+.todo {
+  position: absolute;
+  top: 25vh;
+  left: 50%;
+  transform: translateX(-40%);
+}
+
+.todo-title {
+  font-size: 2em;
+  margin-bottom: 2vh;
+}
+
+.todo-form input {
+  background-color: transparent;
+  color: white;
+  margin-bottom: 2vh;
+  border: none;
+  padding: 3px;
+  border-bottom: 3px solid white;
+}
+
+.todo-list li {
+  list-style: number;
+  font-size: 1.5em;
+}
+
+.todo-list button {
+  background-color: transparent;
+  border: none;
+  font-size: 0.7em;
+  color: white;
+  margin-left: 1vw;
 }
 
 /* weather */
