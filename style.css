@@ -127,6 +127,7 @@ li {
   position: absolute;
   top: 7vh;
   right: 5vw;
+  text-align: right;
 }
 
 .today-weather {
