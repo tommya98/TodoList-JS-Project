@@ -14,40 +14,44 @@
     <title>Todo List</title>
   </head>
   <body>
-    <section class="login">
-      <form class="login-form">
-        <input
-          type="text"
-          required
-          maxlength="15"
-          placeholder="이름을 입력하세요"
-        />
-        <input type="submit" value="확인" />
-      </form>
-      <h1 class="hello hidden"></h1>
-    </section>
+    <header>
+      <section class="login">
+        <form class="login-form">
+          <input
+            type="text"
+            required
+            maxlength="15"
+            placeholder="이름을 입력하세요"
+          />
+          <input type="submit" value="확인" />
+        </form>
+        <h1 class="hello hidden"></h1>
+      </section>
+    </header>
 
-    <section class="time">
-      <div class="calender"></div>
-      <div class="clock"></div>
-    </section>
+    <main class="hidden">
+      <section class="time">
+        <div class="clock"></div>
+        <div class="calender"></div>
+      </section>
 
-    <section class="quote">
-      <span class="quote-text"></span>
-      <span class="quote-author"></span>
-    </section>
+      <section class="quote">
+        <span class="quote-text"></span>
+        <span class="quote-author"></span>
+      </section>
 
-    <section class="todo">
-      <form class="todo-form">
-        <input type="text" placeholder="할 일을 적어주세요." required />
-      </form>
-      <ul class="todo-list"></ul>
-    </section>
+      <section class="todo">
+        <form class="todo-form">
+          <input type="text" placeholder="할 일을 적어주세요." required />
+        </form>
+        <ul class="todo-list"></ul>
+      </section>
 
-    <section class="weather">
-      <span class="temperature"></span>
-      <span class="location"></span>
-    </section>
+      <section class="weather">
+        <span class="temperature"></span>
+        <span class="location"></span>
+      </section>
+    </main>
 
     <script src="./js/time.js"></script>
     <script src="./js/login.js"></script>
