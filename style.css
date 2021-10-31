@@ -105,6 +105,10 @@ li {
   border-bottom: 3px solid white;
 }
 
+.todo-form input::placeholder {
+  color: white;
+}
+
 .todo-list li {
   list-style: number;
   font-size: 1.5em;
