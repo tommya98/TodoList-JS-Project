@@ -74,10 +74,22 @@ li {
 .quote {
   position: absolute;
   left: 5vw;
-  top: 20vh;
+  top: 25vh;
 }
 
 .today-quote,
 .quote-text {
   margin-bottom: 2vh;
+}
+
+/* weather */
+.weather {
+  position: absolute;
+  top: 7vh;
+  right: 5vw;
+}
+
+.today-weather {
+  margin-bottom: 2vh;
+  font-size: 1.2em;
 }

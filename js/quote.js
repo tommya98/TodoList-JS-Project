@@ -12,7 +12,7 @@ const author = document.querySelector(".quote-author");
 const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todayQuote.text;
-author.innerText = "-" + todayQuote.author;
+author.innerText = "- " + todayQuote.author;
 
 function createQuote(quote, name) {
   return { text: quote, author: name };
