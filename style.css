@@ -69,3 +69,15 @@ li {
   left: 50%;
   transform: translateX(-50%);
 }
+
+/* quote */
+.quote {
+  position: absolute;
+  left: 5vw;
+  top: 20vh;
+}
+
+.today-quote,
+.quote-text {
+  margin-bottom: 2vh;
+}
