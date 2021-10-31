@@ -53,6 +53,7 @@ li {
   position: absolute;
   top: 7vh;
   left: 5vw;
+  font-size: 2em;
 }
 
 /* time */
@@ -76,9 +77,14 @@ li {
   position: absolute;
   top: 25vh;
   left: 5vw;
+  max-width: 35vw;
 }
 
-.today-quote,
+.today-quote {
+  font-size: 1.5em;
+  margin-bottom: 5vh;
+}
+
 .quote-text {
   margin-bottom: 2vh;
 }
@@ -128,6 +134,10 @@ li {
   top: 7vh;
   right: 5vw;
   text-align: right;
+}
+
+.today-weather {
+  font-size: 1.5em;
 }
 
 .today-weather {
